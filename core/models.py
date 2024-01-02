@@ -15,7 +15,7 @@ class Profile(models.Model):
     location = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
-        return self.username
+        return self.user.username
 
 
 class Post(models.Model):
